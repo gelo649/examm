@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,48 @@
             text-align: center;
         }
         h1 {
-            font-size: 32px;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 5px;
         }
         h2 {
-            font-size: 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
             justify-content: center;
+            padding: 10px;
+            max-width: 1000px;
+            margin: auto;
         }
         .card {
-            border: 3px solid black;
-            padding: 10px;
-            margin: 10px;
-            width: 250px;
-            text-align: left;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         .card img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .card div {
+            text-align: left;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        strong {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -64,7 +82,7 @@
                             <div>
                                 <p><strong>Name:</strong> ${name}</p>
                                 <p><strong>Course:</strong> ${course}</p>
-                                <p><strong>Year Level / Section:</strong> ${year_level}${section}</p>
+                                <p><strong>Year Level / Section:</strong> ${year_level} ${section}</p>
                                 <p><strong>Adviser:</strong> ${adviser}</p>
                                 <p><strong>School Year:</strong> ${school_year}</p>
                             </div>
