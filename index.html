@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            border: 3px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>ABC Colleges</h1>
+    <h2>Library Users</h2>
+    <div class="container" id="students"></div>
+
+    <script>
+        fetch('PeterAngelo_Murillo.xml')
+            .then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+            .then(data => {
+                let students = data.getElementsByTagName("student");
+                let output = "";
+                for (let student of students) {
+                    let picture = student.getElementsByTagName("picture")[0].textContent;
+                    let name = student.getElementsByTagName("name")[0].textContent;
+                    let course = student.getElementsByTagName("course")[0].textContent;
+                    let year_level = student.getElementsByTagName("year_level")[0].textContent;
+                    let section = student.getElementsByTagName("section")[0].textContent;
+                    let adviser = student.getElementsByTagName("adviser")[0].textContent;
+                    let school_year = student.getElementsByTagName("school_year")[0].textContent;
+
+                    output += `
+                        <div class="card">
+                            <img src="${picture}" alt="Student Photo">
+                            <div>
+                                <p><strong>Name:</strong> ${name}</p>
+                                <p><strong>Course:</strong> ${course}</p>
+                                <p><strong>Year Level / Section:</strong> ${year_level}${section}</p>
+                                <p><strong>Adviser:</strong> ${adviser}</p>
+                                <p><strong>School Year:</strong> ${school_year}</p>
+                            </div>
+                        </div>
+                    `;
+                }
+                document.getElementById("students").innerHTML = output;
+            })
+            .catch(error => console.error('Error loading XML:', error));
+    </script>
+</body>
+</html>
