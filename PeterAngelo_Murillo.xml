@@ -2,7 +2,7 @@
 <students>
     <student>
         <picture>student1.jpg</picture>
-        <name>Juan Dela Cruz</name>
+        <name>Elden Ring</name>
         <course>BSIT</course>
         <year_level>3</year_level>
         <section>3b2</section>
@@ -11,7 +11,7 @@
     </student>
     <student>
         <picture>student2.jpg</picture>
-        <name>Maria Santos</name>
+        <name>snake dragon</name>
         <course>BSCS</course>
         <year_level>2</year_level>
         <section>2a1</section>
@@ -20,7 +20,7 @@
     </student>
     <student>
         <picture>student3.jpg</picture>
-        <name>Pedro Reyes</name>
+        <name>snake ferer</name>
         <course>BSIT</course>
         <year_level>1</year_level>
         <section>1c3</section>
@@ -29,7 +29,7 @@
     </student>
     <student>
         <picture>student4.jpg</picture>
-        <name>Ana Mendoza</name>
+        <name>ate abby</name>
         <course>BSCS</course>
         <year_level>4</year_level>
         <section>4d2</section>
@@ -38,7 +38,7 @@
     </student>
     <student>
         <picture>student5.jpg</picture>
-        <name>Carlos Lim</name>
+        <name>Carlo amar</name>
         <course>BSIT</course>
         <year_level>3</year_level>
         <section>3b1</section>
@@ -47,7 +47,7 @@
     </student>
     <student>
         <picture>student6.jpg</picture>
-        <name>Luis Torres</name>
+        <name>Alyanna malo</name>
         <course>BSCS</course>
         <year_level>2</year_level>
         <section>2a2</section>
@@ -56,7 +56,7 @@
     </student>
     <student>
         <picture>student7.jpg</picture>
-        <name>Elena Cruz</name>
+        <name>christian natividad</name>
         <course>BSIT</course>
         <year_level>1</year_level>
         <section>1c1</section>
@@ -65,7 +65,7 @@
     </student>
     <student>
         <picture>student8.jpg</picture>
-        <name>Ricardo Gomez</name>
+        <name>Godwyn salbi</name>
         <course>BSCS</course>
         <year_level>4</year_level>
         <section>4d1</section>
@@ -74,7 +74,7 @@
     </student>
     <student>
         <picture>student9.jpg</picture>
-        <name>Sophia Villanueva</name>
+        <name>impitis </name>
         <course>BSIT</course>
         <year_level>3</year_level>
         <section>3b3</section>
@@ -83,7 +83,7 @@
     </student>
     <student>
         <picture>student10.jpg</picture>
-        <name>Gabriel Fernandez</name>
+        <name>Rae black</name>
         <course>BSCS</course>
         <year_level>2</year_level>
         <section>2a3</section>
